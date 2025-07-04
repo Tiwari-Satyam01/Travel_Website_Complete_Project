@@ -1,0 +1,60 @@
+body {
+    background: url('2903170.jpg') no-repeat center center;
+    background-size: cover;
+}
+.booking-container {
+    padding: 30px;
+    background: #fff;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+.booking-form select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.booking-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form input,
+.booking-form textarea,
+.booking-form button {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+}
+
+.booking-form button {
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    width: fit-content;
+}
+
+.booking-form button:hover {
+    background-color: #1976D2;
+}
+
+.booking-form .traveler {
+    border: 1px dashed #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+}

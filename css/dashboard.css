@@ -1,0 +1,52 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('6884907.jpg') no-repeat center center;
+    background-size: cover;
+}
+.dashboard {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.dashboard h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.trip-section {
+    margin-top: 30px;
+}
+.trip-section h3 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    color: #222;
+}
+.trip-card {
+    background:rgba(234, 231, 231, 0.83);
+    margin: 15px 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-left: 5px solid #2196F3;
+}
+.trip-card.rejected {
+    border-left-color: #e53935;
+    background-color: #fff6f6;
+}
+.trip-card.pending {
+    border-left-color:orange;
+    background-color:white;
+}
+.trip-card.travelled {
+    border-left-color: #43a047;
+    background-color: #f1fff3;
+}
+.trip-card strong {
+    color: #333;
+}
+footer {
+    margin-top: 50px;
+}
