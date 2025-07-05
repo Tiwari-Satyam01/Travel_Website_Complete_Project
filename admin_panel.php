@@ -3,13 +3,11 @@ session_start();
 include 'includes/db.php';
 include 'includes/header.php';
 
-// Only allow admin access
 if (!isset($_SESSION['user_id']) || $_SESSION['is_admin'] != 1) {
     header("Location: login.php");
     exit();
 }
 
-// Handle status update from admin
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['trip_id'], $_POST['action'])) {
     $trip_id = (int) $_POST['trip_id'];
     $action = $_POST['action'];
@@ -21,7 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['trip_id'], $_POST['ac
     }
 }
 
-// Fetch all trip records with user info
 $query = "SELECT trips.id, trips.user_id, trips.destination, trips.travel_date, trips.status, trips.phone, trips.feedback, users.name 
           FROM trips 
           JOIN users ON trips.user_id = users.id 
